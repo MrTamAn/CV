@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="1"></p>
+<script>
+    let diem = +prompt('Nhap diem vao')
+    if (diem<5){
+        document.getElementById('1').innerHTML = 'Ve thi lai'
+    }
+    else if(diem>=5 && diem<8) {
+        document.getElementById('1').innerHTML = ' cung tam do'}
+    else if(diem>=8 && diem<9.9){
+        document.getElementById('1').innerHTML = ' gioi do'}
+    else if(diem=10){
+        document.getElementById('1').innerHTML = ' xuat sac'}
+    else{ocument.getElementById('1').innerHTML = ' dot dac can mai'}
+</script>
+</body>
+</html>
