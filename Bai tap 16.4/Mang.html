@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Tính tổng số >= 0 đã nhập vào
+    // Nếu nhập số âm thì dừng vòng lặp
+    // Nếu nhập kí tự không phải số thì cho nhập lại
+
+    // let sum = 0;
+   // let number = 0;
+    //
+    function checknumber(){
+        let number = prompt('Nhập số: ');
+
+        while (true) {
+
+        // lấy số vừa nhập gán vào number
+
+        // nếu input không phải số thì chạy code bên dưới
+        if (isNaN(number)) {
+            alert('Bạn vừa nhập kí tự không phải số!');
+            number = 0; // gán lại number thành 0
+            continue; // chuyển sang lần lặp tiếp
+        }
+        return number;
+    }
+    }
+    //
+    // }
+    //
+    // alert(`Tổng số bạn vừa nhập là ${sum}.`);
+// let a = +prompt('nhập 1 số');
+// if (isNaN(a)){
+//     alert('vui lòng nhập số');
+//     a = 0;
+//     continue;
+// }
+</script>
+</body>
+</html>

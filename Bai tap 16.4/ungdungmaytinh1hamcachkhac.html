@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<h2>Canculator</h2>
+<input type="number" id="input1">
+<input type="number" id="input2">
+<div id="iv">
+    <input type="submit" value="addition" class="pressButton">
+    <input type="submit" value="subtraction" class="pressButton">
+    <input type="submit" value="multiple" class="pressButton">
+    <input type="submit" value="division" class="pressButton">
+</div>
+
+<p>Result of <span id="canculation"></span><span id="result"></span></p>
+<script>
+
+    let div = document.querySelector("#iv");
+    div.addEventListener("click", (event) => {
+        let input1 = +document.getElementById("input1").value;
+        let input2 = +document.getElementById("input2").value;
+        if (event.target.value == "addition") {
+            document.getElementById("result").innerHTML = input1 + input2;
+
+        } else if (event.target.value == "subtraction") {
+            document.getElementById("result").innerHTML = input1 - input2;
+        } else if (event.target.value == "multiple") {
+            document.getElementById("result").innerHTML = input1 * input2;
+        } else {
+            document.getElementById("result").innerHTML = input1 / input2;
+        }
+    })
+
+
+</script>
+</body>
+</html>

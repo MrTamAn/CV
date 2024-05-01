@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+<h2>Canculator</h2>
+<input type="number" id="input1">
+<input type="number"id="input2">
+<div>
+    <button type="submit" onclick="addition()">Addition+</button>
+    <button type="submit" onclick="subtrac()">Subtraction-</button>
+    <button type="submit" onclick="multi()">Multiplication*</button>
+    <button type="submit" onclick="division()">Divíion:</button>
+</div>
+<p>Result of <span id="canculation"></span><span id="result"></span></p>
+<script>
+    function addition(){
+    let input1 = +document.getElementById("input1").value;
+    let input2 = +document.getEungdungmaytinh.htmllementById("input2").value;
+    let addition;
+      addition=input1+input2
+        document.getElementById("result").innerHTML = addition
+    }
+    function subtrac(){
+    let input1 = +document.getElementById("input1").value;
+    let input2 = +document.getElementById("input2").value;
+    let subtraction;
+      subtraction=input1-input2
+        document.getElementById("result").innerHTML = subtraction
+    }
+    function multi(){
+    let input1 = +document.getElementById("input1").value;
+    let input2 = +document.getElementById("input2").value;
+    let multipl;
+      multipl=input1*input2
+        document.getElementById("result").innerHTML = multipl
+    }
+    function division(){
+    let input1 = +document.getElementById("input1").value;
+    let input2 = +document.getElementById("input2").value;
+    let division;
+      division=input1/input2
+        document.getElementById("result").innerHTML = division
+    }
+</script>
+</body>
+</html>
