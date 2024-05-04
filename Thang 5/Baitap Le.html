@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Bài 9</p>
+<p id="inten"></p>
+<p>Bài 10</p>
+<img width="50px" height="70px"
+     src="https://didongviet.vn/dchannel/wp-content/uploads/2023/08/hinh-nen-3d-hinh-nen-iphone-dep-3d-didongviet@2x.jpg"
+     alt="">
+<p>Bài 11</p>
+<p id="bai11"></p>
+<p>Bài 12</p>
+<p id="bai12"></p>
+<script>
+    //1. Cách khai bao biến
+    let khaibaobien1;
+    const khaibaobien2 = 0;
+    var khaibaobien3 = 0
+    //2. có mấy kiểu dữ liệu
+    let x0 = 0;//kiểu số
+    let x1 = "abcd"//kiểu string
+    let x2 = true;//boolean
+    let x3=[1,2,3]//mảng
+    const x4={a:1, b:2}//kiểu object
+    let x5 = null;
+
+
+
+
+    // //9. nhap ten in ten voi H1
+    // let ten = prompt("Nhap vao ten cua ban");
+    // document.getElementById("inten").innerHTML = "<h1>" + ten + "</h1>"
+    // // 10. Nhập vào đường dẫn cho biến src, in ra ảnh với nguồn ảnh là biến src
+    //
+    // //     Nhập vào tuổi trong biến age, in ra 'Đủ tuổi' nếu age>18
+    // let age = +prompt("Nhập tuổi của bạn");
+    // if (age <= 18) {
+    //     document.getElementById("bai11").innerHTML = "Chưa đủ tuổi"
+    // } else {
+    //     document.getElementById("bai11").innerHTML = "Đủ tuổi"
+    // }
+    // //     Nhập và a, in ra 'Hello' nếu a chẵn, 'Hi' nếu a lẻ
+    // let a = +prompt("Nhập số a");
+    // if (a % 2 == 0) {
+    //     document.getElementById("bai12").innerHTML = "Hello"
+    // } else {
+    //     document.getElementById("bai12").innerHTML = "Hi"
+    // }
+    // //     Nhập vào a, b. Nếu a>b in ra tổng, nếu a<b in ra tích, nếu a =b in ra 'Hihi'
+    // let c = +prompt("Nhập số thư 1")
+    // let d = +prompt("Nhập số thư 2")
+    // if (c > d) {
+    //     document.write(c+d)
+    // }
+    // else if(c<d){
+    //     document.write(c*d)
+    // }
+    // else (document.write("hihi"))
+    //     Nhập a,b,c. In ra số lớn nhất
+    // let a1 = +prompt("nhập số thứ 1")
+    // let b1 = +prompt("nhập số thứ 2")
+    // let c1 = +prompt("nhập số thứ 3")
+    // if (a1 > b1) {
+    //     if (a1 > c1) {
+    //         document.write("Số lớn nhất là " + a1)
+    //     } else {
+    //         document.write("Số lớn nhất là " + c1)
+    //     }
+    // } else if (b1 > a1) {
+    //     if (b1 > c1) {
+    //         document.write("Số lớn nhất là " + b1)
+    //     } else {
+    //         document.write("Số lớn nhất là " + c1)
+    //     }
+    // }
+
+    //     In ra 100 chữ 'Hello'
+    // for (let i = 0; i < 100; i++) {
+    //     document.write("Hello")
+    // }
+    // Nhập vào N từ prompt. In ra N lần chữ 'Hello'
+    // let N = +prompt("Nhập vào N")
+    // for (let i = 0; i < N; i++) {
+    //     document.write("Hello")
+    // }
+    // In ra cac số từ 1 đến 1000;
+    // for (let i = 0; i <= 1000; i++) {
+    //     document.write(i)
+    // }
+    // In ra cac số từ a đến b;
+    // let a2 = +prompt("nhập số thứ 1")
+    // let b2 = +prompt("nhập số thứ 2")
+    // if (a2 < b2) {
+    //     for (let i = a2; i < b2; i++) {
+    //         document.write(i)
+    //     }
+    // }
+    // else {for (let i = b2; i < a2; i++) {
+    //         document.write(i)     }
+    // }
+    // In ra cac số từ a đến b, mỗi số trong 1 thẻ <h1>;
+    // let a3 = +prompt("nhập số thứ 1")
+    // let b3 = +prompt("nhập số thứ 2")
+    // if (a3 < b3) {
+    //     for (let i = a3; i < b3; i++) {
+    //         document.write("<h1>" + i + "</h1>")
+    //     }
+    // }
+    // else {
+    //     for (let i = b3; i < a3; i++) {
+    //         document.write("<h1>" + i + "</h1>")
+    //     }
+    // }
+    // In ra các số chẵn tu a đến b;
+    // let a4 = +prompt("nhập số thứ 1")
+    // let b4 = +prompt("nhập số thứ 2")
+    //
+    // if(a4<b4) {
+    //     for (let i = a4; i < b4; i++) {
+    //         if (i % 2 == 0) {
+    //             document.write(i)
+    //         }
+    //     }
+    // }
+    // else {
+    //     for (let i = b4; i < a4; i++) {
+    //         if (i % 2 == 0) {
+    //             document.write(i)
+    //         }
+    //     }
+    // }
+    // In ra các số từ a đến b số chẵn trong h2, so le trong h1;
+    // let a5 = +prompt("nhập số thứ 1")
+    // let b5 = +prompt("nhập số thứ 2")
+    //
+    // if(a5<b5) {
+    //     for (let i = a5; i < b5; i++) {
+    //         if (i % 2 == 0) {
+    //             document.write("<h2>" + i + "</h2>")
+    //         }
+    //         else {document.write("<h1>" + i + "</h1>")}
+    //     }
+    // }
+    // else {
+    //     for (let i = b5; i < a5; i++) {
+    //         if (i % 2 == 0) {
+    //             document.write("<h2>" + i + "</h2>")
+    //         }
+    //         else {document.write("<h1>" + i + "</h1>")}
+    //     }
+    // }
+    // Tính tích, Tính Tổng các số chia 5 dư 2 từ a đến b.Đếm các số chia 5 dư 2 từ a đến b
+    // let a6 = +prompt("nhập số thứ 1")
+    // let b6 = +prompt("nhập số thứ 2")
+    // let tich = 1;
+    // let tong = 0;
+    // let count1 = 0;
+    // for (let i = a6; i < b6; i++) {
+    //     if (i % 5 == 2) {
+    //         //document.write(i)
+    //         tich *= i;
+    //         tong += i;
+    //         count1++
+    //     }
+    // }
+    // document.write(tich + "<br>")
+    // document.write(tong + "<br>")
+    // document.write(count1 + "<br>")
+
+    // In ra các phần tử trong mảng
+    //let arr = [1,2,3,4,5,6,7,8,9,0,12,14,15,16,17,20]
+    // In ra các phần tử chẵn trong mảng;
+    // let arr = [1,2,3,4,5,6,7,8,9,0,12,14,15,16,17,20]
+    // for (let i = 0; i < arr.length; i++) {
+    //     if(arr[i]%2==0){
+    //         document.write(arr[i]+"<br>")
+    //     }
+    // }
+    // In ra các phần số chẵn trong h2, le trong h1;
+    //let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 14, 15, 16, 17, 20, 21, 37]
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i] % 2 == 0) {
+    //         document.write("<h2>" + arr[i] + "</h2>")
+    //     }
+    //     else {document.write("<h1>" + arr[i] + "</h1>")}
+    // }
+    // Tính tích các phần tử/ Tính tích các phần tử chẵn/Tính Tổng các phần tử./Tính Tổng các phần tử chẵn
+    // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 14, 15, 16, 17, 20, 21, 37]
+    // let tich1 = 1;
+    // let tong1 = 0;
+    // let tichchan = 1;
+    // let tongchan = 0;
+    // for (let i = 0; i < arr.length; i++) {
+    //     tich1 *= arr[i];
+    //     tong1 += arr[i];
+    //     if (arr[i] % 2 == 0) {
+    //         tichchan *= arr[i];
+    //         tongchan += arr[i];
+    //     }
+    // }
+    // document.write("<h1>" + tich1 + "</h1>")
+    //     //     Tính tích các phần tử chẵn
+    // document.write("<h2>" + tichchan + "</h2>")
+    // // Tính Tổng các phần tử.
+    // document.write("<h1>" + tong1 + "</h1>")
+    // //     Tính Tổng các phần tử chẵn
+    // document.write("<h2>" + tongchan + "</h2>")
+    // Tìm max trong mảng./Tìm max của các phần tử chẵn trong mảng
+    let arr = [1, 2, 3, 4, 5, 6, 3, 8, 9, 12, 3, 15, 16, 17, 20, 21, 37, 42, 3]
+    let max = arr[0];
+    let arrchan = [];
+    let count2 = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (max < arr[i]) {
+            max = arr[i]
+        }
+        if (arr[i] % 5 == 2) {
+            count2++
+            document.write(arr[i])
+        }
+    }
+    document.write("<h2>" + max + "</h2>")
+    // Đếm có  bao nhiêu phần tử chia 5 dư 2 trong mảng
+    document.write("<h2>" + count2 + "</h2>")
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 == 0) {
+            arrchan.push(arr[i])
+        }
+    }
+    document.write("<h1>" + arrchan + "</h1>")
+    let maxchan = arrchan[0];
+    for (let j = 0; j < arrchan.length; j++) {
+        if (maxchan < arrchan[j]) {
+            maxchan = arrchan[j]
+        }
+    }
+    document.write("<h2>" + maxchan + "</h2>")
+
+
+    // Nhap vào a, đếm số lượng a trong mảng.
+    let a4 = +prompt("nhap vao 1 so de kiem tra")
+    let count3 = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (a4 == arr[i]) {
+            count3+
+            //     Nhap vao a, tim vi tri cua a trong mảng.
+            document.write(i)
+        }
+    }
+    document.write("<h2>" + count3 + "</h2>")
+
+
+
+</script>
+</body>
+</html>
