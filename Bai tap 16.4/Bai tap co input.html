@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h3 id="printmang"></h3>
+<h3 id="printtong"></h3>
+<h3 id="printsoluong"></h3>
+<h3 id="printtrungbinhcong"></h3>
+
+<script>
+
+
+    let arr = [1, 2, 13, 44, 5, 67, 63, 23];
+
+    let tong = 0;
+    let count1 = 0;
+    document.getElementById("printmang").innerHTML = "Dãy số là: " + arr;
+
+    function tinhtong() {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] >= 10) {
+                tong += arr[i];
+            }
+        }
+        return tong;
+    }
+
+    //hỏi khi nhấn tiếp thì sẽ bị cộng tiếp là vì sao, hàm chỉ cho ra 1 giá trị duy nhất?
+
+    let x3 = tinhtong()
+    document.getElementById("printtong").innerHTML = " Tổng là: " + x3;
+
+
+    function soluong() {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] >= 10) {
+                count1++
+
+            }
+        }
+        return count1
+        // document.getElementById("printtong").innerHTML = "<h2>" + "tong la" + tong + "so luong la" + count1 + "</h2>";
+    }
+
+    let y3 = soluong();
+    document.getElementById("printsoluong").innerHTML = "Số lượng lớn hơn 10 là: " + y3;
+    let tbc = 0;
+
+    function TBC() {
+        tbc = x3 / y3;
+        return tbc;
+    }
+
+    let z3 = TBC();
+    document.getElementById("printtrungbinhcong").innerHTML = "Trung bình cộng là: " + z3;
+
+</script>
+</body>
+</html>
